@@ -31,13 +31,15 @@
   <script src="./components/table-component/table-component.js"></script>
 
   <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
-</head>
+<style>
+.fyp-figure{margin:1.25rem auto;text-align:center;max-width:100%}.fyp-figure img{display:block;max-width:100%;width:auto;height:auto;max-height:430px;object-fit:contain;margin:0 auto;border-radius:8px}.fyp-figure figcaption{font-size:.85rem;color:#626d7a;margin-top:.55rem;line-height:1.4}.fyp-hero img{width:100%;max-height:440px;object-fit:cover}.fyp-diagram img{max-height:390px}.fyp-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:16px;align-items:center}.fyp-gallery .fyp-figure{margin:8px auto}.fyp-gallery-two{grid-template-columns:repeat(auto-fit,minmax(min(100%,310px),1fr))}.fyp-component-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:18px;margin:22px 0}.fyp-card{border:1px solid #dbe1e8;border-radius:12px;padding:16px;background:#fafbfd;min-width:0}.fyp-card h4{margin:0 0 10px;font-size:1rem}.fyp-card .fyp-figure img{max-height:245px}.fyp-event-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:18px;margin:18px 0}.fyp-event-grid ul{padding-left:22px}.fyp-note{font-size:.8rem;color:#6c7480;font-style:italic}.missing-image{display:none}@media(max-width:600px){.fyp-hero img{max-height:280px}.fyp-card{padding:12px}}
+</style></head>
 
 <body><div class="content"><h1>Optimisation of Suspension and Steering System for FSAE</h1><p><strong>CDE4301 Interim Report — Steering System Focus</strong></p><p>Aroza Anson | NUS Formula SAE</p><sl-divider></sl-divider><div class="table-of-content"><h2>Table of Contents</h2><sl-tree>
 <sl-tree-item expanded><a href="#section-1">1. Introduction, Problem Statement and Objectives</a>
-<sl-tree-item><a href="#section-1-1">1.1 Formula SAE and Project Context</a></sl-tree-item>
-<sl-tree-item><a href="#section-1-2">1.2 Problem Statement</a></sl-tree-item>
-<sl-tree-item><a href="#section-1-3">1.3 Project Objectives and Scope</a></sl-tree-item>
+<sl-tree-item><a href="#section-1-1">1.1 Formula SAE Competition</a></sl-tree-item>
+<sl-tree-item><a href="#section-1-2">1.2 FSAE Team Breakdown</a></sl-tree-item>
+
 </sl-tree-item>
 <sl-tree-item expanded><a href="#section-2">2. Steering System Background and Design Specifications</a>
 <sl-tree-item><a href="#section-2-1">2.1 Steering System Fundamentals</a></sl-tree-item>
@@ -70,9 +72,28 @@
 <sl-tree-item expanded><a href="#section-7">7. Conclusion</a>
 </sl-tree-item>
 <sl-tree-item><a href="#references">References</a></sl-tree-item><sl-tree-item><a href="#appendices">Appendices</a></sl-tree-item></sl-tree></div><sl-divider></sl-divider><section id="section-1"><h2>1. Introduction, Problem Statement and Objectives</h2>
-<section id="section-1-1"><h3>1.1 Formula SAE and Project Context</h3><p><em>Content to be added.</em></p></section>
-<section id="section-1-2"><h3>1.2 Problem Statement</h3><p><em>Content to be added.</em></p></section>
-<section id="section-1-3"><h3>1.3 Project Objectives and Scope</h3><p><em>Content to be added.</em></p></section>
+<section id="section-1-1"><h3>1.1 Formula SAE Competition</h3>
+<figure class="fyp-figure fyp-hero"><img src="assets/section1/section1_01.webp" alt="NUS Formula SAE at Michigan International Speedway" loading="lazy" onerror="this.parentElement.classList.add('missing-image')"><figcaption>NUS Formula SAE at Michigan International Speedway</figcaption></figure>
+<p>Formula SAE Michigan is an intervarsity competition where teams design, build and race a formula-style car. Teams are assessed based on static and dynamic events.</p>
+<div class="fyp-event-grid"><div class="fyp-card"><h4>Static events</h4><ul><li>Design briefing</li><li>Cost Report</li><li>Business Presentation</li></ul><p class="fyp-note">Graphics to be added.</p></div>
+<div class="fyp-card"><h4>Dynamic events</h4><ul><li>Acceleration (75 m straight)</li><li>Skidpad (figure of 8)</li><li>Autocross (800 m sprint)</li><li>Endurance (22 km)</li><li>Efficiency (energy utilisation during endurance)</li></ul><p class="fyp-note">Graphics to be added.</p></div></div>
+<p>For the R27 season, the team has set the following goal: <strong>Achieve a top 10 placement overall by maintaining our scores for static events and placing top 10 in dynamic events through the following targets.</strong></p>
+</section>
+<section id="section-1-2"><h3>1.2 FSAE Team Breakdown</h3><p>Departments:</p>
+<figure class="fyp-figure fyp-diagram"><img src="assets/section1/section1_02.webp" alt="NUS Formula SAE department structure" loading="lazy" onerror="this.parentElement.classList.add('missing-image')"><figcaption>NUS Formula SAE department structure</figcaption></figure>
+<p>The suspension department aims to create a system that keeps the tyres at an optimal angle to the ground to maximise all driving forces on the car. Below is an overview of the R27 suspension system.</p>
+<div class="fyp-gallery fyp-gallery-two"><figure class="fyp-figure "><img src="assets/section1/section1_03.webp" alt="R27 suspension assembly overview" loading="lazy" onerror="this.parentElement.classList.add('missing-image')"><figcaption>R27 suspension assembly overview</figcaption></figure><figure class="fyp-figure "><img src="assets/section1/section1_04.webp" alt="R27 suspension and steering assembly overview" loading="lazy" onerror="this.parentElement.classList.add('missing-image')"><figcaption>R27 suspension and steering assembly overview</figcaption></figure></div>
+<p>Below is a breakdown of the various suspension components.</p>
+<div class="fyp-component-grid">
+<div class="fyp-card"><h4>1. Rims and Tyres</h4><div class="fyp-gallery"><figure class="fyp-figure "><img src="assets/section1/section1_05.webp" alt="1. Rims and Tyres" loading="lazy" onerror="this.parentElement.classList.add('missing-image')"><figcaption>1. Rims and Tyres</figcaption></figure></div></div>
+<div class="fyp-card"><h4>2. Hubs and Uprights</h4><div class="fyp-gallery"><figure class="fyp-figure "><img src="assets/section1/section1_06.webp" alt="2. Hubs and Uprights" loading="lazy" onerror="this.parentElement.classList.add('missing-image')"><figcaption>2. Hubs and Uprights</figcaption></figure><figure class="fyp-figure "><img src="assets/section1/section1_07.webp" alt="2. Hubs and Uprights" loading="lazy" onerror="this.parentElement.classList.add('missing-image')"><figcaption>2. Hubs and Uprights</figcaption></figure></div></div>
+<div class="fyp-card"><h4>3. Control Arms and Rods</h4><div class="fyp-gallery"><figure class="fyp-figure "><img src="assets/section1/section1_08.webp" alt="3. Control Arms and Rods" loading="lazy" onerror="this.parentElement.classList.add('missing-image')"><figcaption>3. Control Arms and Rods</figcaption></figure><figure class="fyp-figure "><img src="assets/section1/section1_09.webp" alt="3. Control Arms and Rods" loading="lazy" onerror="this.parentElement.classList.add('missing-image')"><figcaption>3. Control Arms and Rods</figcaption></figure></div></div>
+<div class="fyp-card"><h4>4. Springs and Dampers</h4><div class="fyp-gallery"><figure class="fyp-figure "><img src="assets/section1/section1_10.webp" alt="4. Springs and Dampers" loading="lazy" onerror="this.parentElement.classList.add('missing-image')"><figcaption>4. Springs and Dampers</figcaption></figure><figure class="fyp-figure "><img src="assets/section1/section1_11.webp" alt="4. Springs and Dampers" loading="lazy" onerror="this.parentElement.classList.add('missing-image')"><figcaption>4. Springs and Dampers</figcaption></figure></div></div>
+<div class="fyp-card"><h4>5. Anti Roll Bars</h4><div class="fyp-gallery"><figure class="fyp-figure "><img src="assets/section1/section1_12.webp" alt="5. Anti Roll Bars" loading="lazy" onerror="this.parentElement.classList.add('missing-image')"><figcaption>5. Anti Roll Bars</figcaption></figure><figure class="fyp-figure "><img src="assets/section1/section1_13.webp" alt="5. Anti Roll Bars" loading="lazy" onerror="this.parentElement.classList.add('missing-image')"><figcaption>5. Anti Roll Bars</figcaption></figure></div></div>
+<div class="fyp-card"><h4>6. Steering</h4><div class="fyp-gallery"><figure class="fyp-figure "><img src="assets/section1/section1_14.webp" alt="6. Steering" loading="lazy" onerror="this.parentElement.classList.add('missing-image')"><figcaption>6. Steering</figcaption></figure></div></div>
+<div class="fyp-card"><h4>7. Brakes</h4><div class="fyp-gallery"><figure class="fyp-figure "><img src="assets/section1/section1_15.webp" alt="7. Brakes" loading="lazy" onerror="this.parentElement.classList.add('missing-image')"><figcaption>7. Brakes</figcaption></figure></div></div>
+</div>
+</section>
 </section>
 <sl-divider></sl-divider>
 <section id="section-2"><h2>2. Steering System Background and Design Specifications</h2>
